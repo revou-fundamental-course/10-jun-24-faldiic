@@ -7,10 +7,60 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Temperature Converter</h1>   
-             
-    </header>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <table>
+            <tr>
+                <td class="convert-from">
+                    <font style="vertical-align: inherit;">From</font>
+                </td>
+                <td>
+                    <input type="number" id="input-temp" placeholder="Enter temperature">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="button-converter">
+                    <button id="celsius-btn" title="Pilih derajat Celcius" type="button">
+                        <font style="vertical-align: inherit;">(&deg;C)</font>
+                    </button>
+                    <button id="fahrenheit-btn" title="Pilih derajat Fahrenheit" type="button">
+                        <font style="vertical-align: inherit;">(&deg;F)</font>
+                    </button>
+                    <button id="reverse-btn" title="reverse" type="button">
+                        <font style="vertical-align: inherit;">⤭</font>
+                    </button>
+                </td>
+            </tr>
+            <tr class="answer-box">
+                <td>Result</td>
+                <td>
+                    <input type="text" id="output-temp" placeholder="Waiting for valid input...." readonly>
+                </td>
+            </tr>
+            <tr class="formula">
+                <td>Formula</td>
+                <td>
+                    <input type="text" id="formula-display" readonly>
+                </td>
+            </tr>
+        </table>
+
+        <h2>Temperature Conversion Formulas</h2>
+        <table>
+            <tr class="result">
+                <th class="result">Conversion</th>
+                <th class="result">Formula</th>
+            </tr>
+            <tr>
+                <td class="result">Celsius to Fahrenheit</td>
+                <td class="result">S(°F) = (S(°C) × 9/5) + 32</td>
+            </tr>
+            <tr>
+                <td class="result">Fahrenheit to Celsius</td>
+                <td class="result">S(°C) = (S(°F) - 32) × 5/9</td>
+            </tr>
+        </table>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
